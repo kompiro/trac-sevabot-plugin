@@ -6,15 +6,19 @@ This plugin provides to notify [Trac](http://trac.edgewall.org) ticket modificat
 
 1. [Setup Sevabot](https://github.com/opensourcehacker/sevabot#installation-and-supported-operating-systems).
 1. Build this plugin 
-	git clone https://github.com/kompiro/trac-sevabot-plugin
-	python setup.py bdist_egg
-	cp dist/TracSevabotNotificationPlugin-VERSION-PYTHON_VERSION.egg YOUR_TRAC_ENV/plugins
+
+        git clone https://github.com/kompiro/trac-sevabot-plugin
+        python setup.py bdist_egg
+        cp dist/TracSevabotNotificationPlugin-VERSION-PYTHON_VERSION.egg YOUR_TRAC_ENV/plugins
+
 1. Configure your trac env. Open your conf/trac.ini and set your env value like below.
+
         [sevabot]
         chat = SEVABOT_MANAGED_CHAT_ID
         host = SEVABOT_HOST
         port = SEVABOT_PORT
         shared_secret = SEVABOT_SHARED_SECRET
+
 1. Restart Trac 
 
 
@@ -25,7 +29,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
